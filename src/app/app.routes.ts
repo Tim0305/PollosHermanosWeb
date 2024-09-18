@@ -9,7 +9,7 @@ export const routes: Routes = [
       ),
   },
   {
-    path: 'carrito',
+    path: 'pedidos',
     loadComponent: () =>
       import('./components/shopping-cart/shopping-cart.component').then(
         (m) => m.ShoppingCartComponent
