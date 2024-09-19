@@ -3,13 +3,13 @@
     <p>Tu carrito esta vacio</p>
     <img src="../../../assets/vacio.png" alt="Carrito vacio" />
   </div>
-  <div class="productContainer">
+  <div *ngIf="products.length !== 0" class="productContainer">
     <div *ngFor="let product of products" class="productos">
       <img src="{{ product.imagenURL }}" alt="Imagen Producto" />
       <div class="contenido">
         <h2>{{ product.nombre }}</h2>
         <p>{{ product.descripcion }}</p>
-        <p>{{ product.precio }}</p>
+        <p>{{ product.precio | currency }}</p>
         <button (click)="removeFromCart(product.id)">Remover</button>
       </div>
     </div>

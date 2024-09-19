@@ -13,7 +13,7 @@ export class ReceiptService {
       receiptContent += `   <producto>\n      <idProducto>${item.id}</idProducto>\n     <nombreProducto>${item.nombre}</nombreProducto>\n     <precio>${item.precio}</precio>\n   </producto>\n`;
     });
     receiptContent += ' </pedido>\n';
-    receiptContent += ` <total>${total}</total>\n`;
+    receiptContent += ` <total>${total * 1.16}</total>\n`;
     receiptContent += '</recibo>';
     this.downloadFile(receiptContent, 'receipt.xml');
   }

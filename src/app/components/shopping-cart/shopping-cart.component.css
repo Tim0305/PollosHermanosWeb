@@ -1,24 +1,28 @@
 .container {
   display: flex;
-  justify-content: center;
-  margin-right: 10%;
+  justify-content: left;
+  margin-bottom: 5%;
+  width: 100%;
 }
 
 .vacio {
   margin-left: 5%;
+  margin-right: 5%;
   margin-top: 5%;
-  width: 50%;
+  flex: 1;
   text-align: center;
   font-size: 30px;
 }
 
 .vacio img {
   opacity: 40%;
+  width: 30%;
 }
 
 .productContainer {
   display: inline-block;
-  width: auto;
+  flex: 1;
+  margin-right: 20%;
 }
 
 .productos {
@@ -67,11 +71,11 @@
 .pago {
   border: 1px solid black;
   border-radius: 10px;
-  position: absolute;
-  right: 5%;
-  top: 20%;
+  flex: 0 0 15%;
+  height: max-content;
   padding: 5%;
   text-align: center;
+  margin-right: 2%;
 }
 
 .pago p {
